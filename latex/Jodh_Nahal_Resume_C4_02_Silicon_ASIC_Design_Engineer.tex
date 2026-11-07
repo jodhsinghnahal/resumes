@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia (UBC)}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{HDL \& Design}{: Verilog/SystemVerilog, RTL Design, FSM Design, FPGA, Quartus} \\
+     \textbf{Verification}{: UVM, SVA, Coverage, Synopsys VCS/Verdi, ModelSim, Waveform Analysis} \\
+     \textbf{Programming}{: C/C++, Python, Perl, Shell, ARM Assembly} \\
+     \textbf{Tools}{: Linux, Git, Docker, Jenkins, GDB, JTAG, Logic Analyzers, Oscilloscopes, LTspice, KiCad}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Verifying the Input--Output Memory Management Unit cache behavior for the AMD IOHUB architecture using UVM constrained-random and directed testbenches.}
+        \resumeItem{Writing SystemVerilog Assertions (SVA) to cross-check legal signal responses across interconnected IPs.}
+        \resumeItem{Debugging RTL behavior through simulation, waveform analysis, and regression testing in Synopsys VCS/Verdi.}
+        \resumeItem{Expanded the constrained-random testbench to cover corner cases and improve functional coverage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Developed object-oriented, multi-threaded C++ firmware on Linux-based Raspberry Pi gateways, achieving a $7\times$ increase in device capacity and 90\% reduction in CPU usage over the prior Python implementation.}
+        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
+        \resumeItem{Developed Hardware-in-the-Loop (HIL) CAN and UART simulators in Python/C++ to execute 100+ tests for embedded gateway systems, validating edge cases and stress-testing real-time firmware performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers to develop a distributed embedded control system integrating ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C with aggregated data streamed over UART.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC ECE --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Simulated and optimized piezoelectric energy harvesting circuits in LTspice and Simulink/Simscape.}
+        \resumeItem{Designed power-management PCB hardware in KiCad integrating AC--DC rectifiers and switching circuitry.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{ARC4 Hardware Decryption} $|$ \emph{SystemVerilog, FPGA, Quartus, ModelSim}}{}
+      \resumeItemListStart
+        \resumeItem{Designed a complete ARC4 stream cipher decryption engine in SystemVerilog with KSA and PRGA implemented as FSMs; parallelized to 8 decryption cores with coordinated on-chip memory arbitration.}
+        \resumeItem{Developed verification testbenches with waveform analysis and \texttt{.memh}-based memory initialization to validate RTL functionality and timing behavior on a DE1-SoC FPGA.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Simple RISC Machine} $|$ \emph{Verilog, FPGA, Quartus, ModelSim}}{}
+      \resumeItemListStart
+        \resumeItem{Designed and verified a RISC CPU in Verilog comprising an ALU, register file, RAM, program counter, and FSM-based control unit executing a reduced ARM Instruction Set Architecture (ISA); validated on a FPGA.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Graphics Rendering \& VGA Display} $|$ \emph{SystemVerilog, FPGA, Quartus, ModelSim}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented Bresenham circle-drawing algorithms and graphics rendering pipelines in SystemVerilog for a 160$\times$120 VGA display on a DE1-SoC FPGA.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{OS161 Kernel Development} $|$ \emph{C, GDB, MIPS, Operating Systems}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented virtual memory subsystems including TLB fault handling, demand paging, and process isolation in a teaching OS kernel; debugged memory-management and concurrency issues using GDB in a large-scale C codebase.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

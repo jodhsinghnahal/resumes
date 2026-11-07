@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{Languages}{: C/C++, Python, Java, Lua, JavaScript} \\
+     \textbf{Graphics \& Simulation}{: Bresenham Rendering, VGA Graphics, MuJoCo, dm\_control, PyGame, OpenCV} \\
+     \textbf{Tools}{: Git, Linux, GDB, Docker}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
+        \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
+        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Built a ROS--Arduino pipeline using rosserial, OpenCV, and Python nodes to modulate USB camera framerates from potentiometer readings.}
+        \resumeItem{Automated firmware validation with GitHub Actions CI and Catch2 unit tests to improve regression coverage and reliability.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Graphics Rendering \& VGA Display} $|$ \emph{SystemVerilog, FPGA, VGA Adapter}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented graphics rendering pipelines and Bresenham circle-drawing in SystemVerilog for a 160$\times$120 VGA display on a DE1-SoC FPGA.}
+        \resumeItem{Designed RTL datapaths for single-cycle-per-pixel rendering and debugged timing and logic issues via waveform inspection.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Image Compression Quadtree (Toqutree)} $|$ \emph{C++, STL, Image Processing}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a modified quadtree in C++ that recursively decomposes images for color quantization and compression.}
+        \resumeItem{Implemented 2D prefix sum arrays for O(1) average color and hue histogram lookups over arbitrary regions.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Image Animation \& Flood Fill} $|$ \emph{C++, STL, OOP, Data Structures}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented BFS and DFS flood fill using custom Stack, Queue, and Deque data structures.}
+        \resumeItem{Applied polymorphism and abstract base classes to build an extensible color-picker framework.}
+        \resumeItem{Built an animation engine that exports fill-progression frames as PNG sequences to analyze traversal behavior.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Behaviour Cloning for Robotic Control} $|$ \emph{PyTorch, MuJoCo, NumPy, dm\_control}}{}
+      \resumeItemListStart
+        \resumeItem{Designed a 2-layer DNN in PyTorch mapping robotic state observations to joint torque predictions for a simulated Reacher task.}
+        \resumeItem{Built an end-to-end pipeline with PyGame to collect, filter, and structure human-guided interaction data for training in dm\_control.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Racing and Traffic Sign Recognition (F1Tenth)} $|$ \emph{Python, YOLOv8, ROS, OpenCV}}{}
+      \resumeItemListStart
+        \resumeItem{Architected a multi-node ROS2 stack with LiDAR and/or camera gap/wall-following and real-time command arbitration for collision-free racing on a Jetson Nano car.}
+        \resumeItem{Engineered a hierarchical safety system with AEB and adaptive speed control for high-speed obstacle avoidance.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

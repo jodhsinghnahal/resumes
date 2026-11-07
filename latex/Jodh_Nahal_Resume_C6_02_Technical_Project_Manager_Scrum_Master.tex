@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{Process \& Tracking}{: Jira, Confluence, Code Reviews, Regression Tracking, Release Presentations} \\
+     \textbf{Languages}{: Python, C/C++, SQL, Shell} \\
+     \textbf{Tools}{: Git, Docker, Jenkins, Linux}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Automated firmware validation with GitHub Actions CI and Catch2 unit tests to improve regression coverage and reliability.}
+        \resumeItem{Led migration to a CAN-FD architecture using Moteus r4.11 controllers and BLDC motors for closed-loop torque control and higher bandwidth.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
+        \resumeItem{Debugged C2000 firmware over JTAG in CCSTUDIO.}
+        \resumeItem{Developed Zephyr RTOS firmware on a Teensy 4.1 for stepper-based control of a 6-axis robotic arm.}
+        \resumeItem{Interfaced an Intel NUC (onboard PC) with SocketCAN and bridged data to ROS.}
+        \resumeItem{Built a ROS--Arduino pipeline using rosserial, OpenCV, and Python nodes to modulate USB camera framerates from potentiometer readings.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Performed code reviews and system-level regression testing, reporting issues on Jira and Confluence.}
+        \resumeItem{Created documentation using PlantUML and Sphinx, and presented the field release to the team and Product Managers.}
+        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Building automation scripts and regression workflows to improve validation efficiency and coverage closure.}
+        \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Racing and Traffic Sign Recognition (F1Tenth)} $|$ \emph{Python, YOLOv8, ROS, OpenCV}}{}
+      \resumeItemListStart
+        \resumeItem{Architected a multi-node ROS2 stack with LiDAR and/or camera gap/wall-following and real-time command arbitration for collision-free racing on a Jetson Nano car.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{BlindVision} $|$ \emph{Flask, YOLOv8, OpenCV, Gemini API, JavaScript}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack IoT web app giving visually impaired users real-time AI-powered audio descriptions of live video and audio.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

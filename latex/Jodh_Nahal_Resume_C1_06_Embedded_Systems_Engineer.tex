@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{Languages}{: C/C++, Python, ARM Assembly, SystemVerilog, Shell} \\
+     \textbf{Embedded \& Protocols}{: Zephyr RTOS, FreeRTOS, Linux, ROS, CAN/CAN-FD, SocketCAN, RV-C, NMEA 2000} \\
+     \textbf{Platforms \& Tools}{: STM32, ESP32, TI C2000, Teensy, Raspberry Pi, GDB, JTAG, Oscilloscopes, Logic Analyzers}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
+        \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
+        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
+        \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
+        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
+        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
+        \resumeItem{Developed Zephyr RTOS firmware on a Teensy 4.1 for stepper-based control of a 6-axis robotic arm.}
+        \resumeItem{Led migration to a CAN-FD architecture using Moteus r4.11 controllers and BLDC motors for closed-loop torque control and higher bandwidth.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+        \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Designing embedded power-management PCB hardware in KiCad integrating AC--DC rectifiers, transformers, and switching circuitry.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{OS161 Kernel Development} $|$ \emph{C, GDB, MIPS, Operating Systems}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered thread synchronization primitives, including blocking locks and condition variables, to resolve race conditions in kernel space.}
+        \resumeItem{Implemented system calls including fork, execv, and file I/O.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Memory Allocator Implementation} $|$ \emph{C, Pointers, Systems Programming}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a custom malloc, free, and realloc using an implicit free list with 8-byte alignment and block headers.}
+        \resumeItem{Implemented heap consistency checkers to detect corrupted headers, double-frees, and buffer overflows.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

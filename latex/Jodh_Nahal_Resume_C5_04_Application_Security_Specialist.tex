@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{AppSec}{: Code Review, Vulnerability Discovery, Heap Integrity Checks, Buffer Overflows, Salted SHA256 Auth} \\
+     \textbf{Languages}{: C/C++, ARM64 Assembly, Python, JavaScript} \\
+     \textbf{Tools}{: GDB, objdump, readelf, Linux/Unix, Git, Jira}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Performed code reviews and system-level regression testing, reporting issues on Jira and Confluence.}
+        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
+        \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
+        \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
+        \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
+        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
+        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Writing SystemVerilog Assertions (SVA) to cross-check legal responses across IPs.}
+        \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
+        \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Memory Allocator Implementation} $|$ \emph{C, Pointers, Systems Programming}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented heap consistency checkers to detect corrupted headers, double-frees, and buffer overflows.}
+        \resumeItem{Developed a custom malloc, free, and realloc using an implicit free list with 8-byte alignment and block headers.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ARM64 Security Exploitation} $|$ \emph{ARM64 Assembly, GDB, ROP, Reverse Engineering}}{}
+      \resumeItemListStart
+        \resumeItem{Hijacked return addresses in ARM64 binaries via buffer overflows and stack mapping to achieve arbitrary code execution.}
+        \resumeItem{Used objdump, readelf, and GDB to reverse-engineer calling conventions and find vulnerabilities.}
+        \resumeItem{Engineered Return-Oriented Programming chains to bypass non-executable stack protections.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Multimodal AI Messenger} $|$ \emph{Node.js, Express, WebSocket, MongoDB, Gemini API}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented SHA256 salt-based user authentication.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{OS161 Kernel Development} $|$ \emph{C, GDB, MIPS, Operating Systems}}{}
+      \resumeItemListStart
+        \resumeItem{Debugged concurrency and memory-management issues with GDB in a large C codebase.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{BlindVision} $|$ \emph{Flask, YOLOv8, OpenCV, Gemini API, JavaScript}}{}
+      \resumeItemListStart
+        \resumeItem{Built a Python Flask/SQLite backend with RESTful endpoints and CRUD operations, and a JavaScript/HTML/CSS frontend deployed on PythonAnywhere.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Adversarial Robustness Evaluation} $|$ \emph{PyTorch, CNN, Computer Vision}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented FGSM and PGD adversarial attack pipelines in PyTorch to evaluate VGG-16 robustness.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand{\labelitemi}{$\circ$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jodh Singh Nahal} \\ \vspace{1pt}
+    \small 778-538-2351 $|$
+    \href{mailto:nahal.jodhsingh@gmail.com}{\underline{nahal.jodhsingh@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jodhsinghnahal/}{\underline{linkedin.com/in/jodhsinghnahal}} $|$
+    \href{https://github.com/jodhsinghnahal}{\underline{github.com/jodhsinghnahal}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Expected May 2028}
+      {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+     \textbf{Languages}{: Python, SQL, C/C++, JavaScript, Shell} \\
+     \textbf{Data \& Pipelines}{: SQLite, MongoDB, MQTT, NumPy, OpenCV, JSON} \\
+     \textbf{Tools}{: Docker, Jenkins, Git, Linux/Unix, GitHub Actions}
+}}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
+      {Xantrex}{Burnaby, BC}
+      \resumeItemListStart
+        \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
+        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
+        \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
+        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
+        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
+        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification Engineering Intern}{Sept 2026 -- Present}
+      {AMD}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Building automation scripts and regression workflows to improve validation efficiency and coverage closure.}
+        \resumeItem{Built an AI-driven browser automation tool that auto-provisions tool access and software installs for onboarding.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Automated firmware validation with GitHub Actions CI and Catch2 unit tests to improve regression coverage and reliability.}
+        \resumeItem{Built a ROS--Arduino pipeline using rosserial, OpenCV, and Python nodes to modulate USB camera framerates from potentiometer readings.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Behaviour Cloning for Robotic Control} $|$ \emph{PyTorch, MuJoCo, NumPy, dm\_control}}{}
+      \resumeItemListStart
+        \resumeItem{Built an end-to-end pipeline with PyGame to collect, filter, and structure human-guided interaction data for training in dm\_control.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Autonomous Racing and Traffic Sign Recognition (F1Tenth)} $|$ \emph{Python, YOLOv8, ROS, OpenCV}}{}
+      \resumeItemListStart
+        \resumeItem{Curated a 1,500+ image dataset, adding 600+ custom-labeled track images to handle motion blur and lighting.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Multimodal AI Messenger} $|$ \emph{Node.js, Express, WebSocket, MongoDB, Gemini API}}{}
+      \resumeItemListStart
+        \resumeItem{Built a concurrent full-stack messaging platform with Node.js, MongoDB, and WebSockets for real-time updates.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{BlindVision} $|$ \emph{Flask, YOLOv8, OpenCV, Gemini API, JavaScript}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented the Gemini API and YOLOv8 for multimodal AI, with OpenCV, NumPy, PIL, and Base64 for camera image processing.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Adversarial Robustness Evaluation} $|$ \emph{PyTorch, CNN, Computer Vision}}{}
+      \resumeItemListStart
+        \resumeItem{Built a modular attack framework with configurable hyperparameters to analyze perturbation level versus Attack Success Rate (ASR).}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
