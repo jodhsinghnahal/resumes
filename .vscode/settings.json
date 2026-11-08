@@ -1,3 +1,25 @@
 {
-  "latex-workshop.latex.outDir": "%DIR%/build"
+  "latex-workshop.latex.outDir": "%DIR%/pdfs",
+  "latex-workshop.latex.auxDir": "%DIR%/build",
+  "latex-workshop.latex.recipe.default": "latexmk (PDF only)",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (PDF only)",
+      "tools": ["latexmk-pdf-only"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-pdf-only",
+      "command": "latexmk",
+      "args": [
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "-auxdir=%AUXDIR%",
+        "%DOC%"
+      ]
+    }
+  ]
 }
