@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -105,14 +105,8 @@
         \resumeItem{Created documentation using PlantUML and Sphinx, and presented the field release to the team and Product Managers.}
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
-        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
-        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
-        \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
-        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
-        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
-        \resumeItem{Tested and validated AC/DC power electronics (inverters, batteries, chargers) using power supplies, loads, and oscilloscopes.}
-        \resumeItem{Performed code reviews and system-level regression testing, reporting issues on Jira and Confluence.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
+        \resumeItem{Profiled the C++ firmware to eliminate performance bottlenecks.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -126,6 +120,25 @@
         \resumeItem{Writing SystemVerilog Assertions (SVA) to cross-check legal responses across IPs.}
       \resumeItemListEnd
 
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
+        \resumeItem{Debugged C2000 firmware over JTAG in CCSTUDIO.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
+        \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
+        \resumeItem{Designing embedded power-management PCB hardware in KiCad integrating AC--DC rectifiers, transformers, and switching circuitry.}
+      \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 \section{Projects}
@@ -136,18 +149,12 @@
       \resumeItemListStart
         \resumeItem{Developed a full-stack IoT web app giving visually impaired users real-time AI-powered audio descriptions of live video and audio.}
         \resumeItem{Used Asynchronous JavaScript (AJAX), HTML, and CSS/Bootstrap for the frontend.}
-        \resumeItem{Built a web application compatible with both mobile and desktop.}
-        \resumeItem{Added click, touch, and swipe events and 4 input modes (draw, speech, type).}
-        \resumeItem{Integrated Ocrad.js, Speech Recognition, and Speech Synthesis to improve accessibility.}
-        \resumeItem{Built a Python Flask/SQLite backend with RESTful endpoints and CRUD operations, and a JavaScript/HTML/CSS frontend deployed on PythonAnywhere.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Multimodal AI Messenger} $|$ \emph{Node.js, Express, WebSocket, MongoDB, Gemini API}}{}
       \resumeItemListStart
         \resumeItem{Built a responsive frontend with media upload.}
-        \resumeItem{Built a concurrent full-stack messaging platform with Node.js, MongoDB, and WebSockets for real-time updates.}
-        \resumeItem{Integrated the Google Gemini API for multimodal tasks, including image analysis and speech transcription.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

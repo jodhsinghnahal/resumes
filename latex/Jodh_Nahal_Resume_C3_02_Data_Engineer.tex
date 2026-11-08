@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -104,12 +104,9 @@
       \resumeItemListStart
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
         \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
         \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
-        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
-        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
-        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -118,6 +115,8 @@
       \resumeItemListStart
         \resumeItem{Building automation scripts and regression workflows to improve validation efficiency and coverage closure.}
         \resumeItem{Built an AI-driven browser automation tool that auto-provisions tool access and software installs for onboarding.}
+        \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -126,6 +125,16 @@
       \resumeItemListStart
         \resumeItem{Automated firmware validation with GitHub Actions CI and Catch2 unit tests to improve regression coverage and reliability.}
         \resumeItem{Built a ROS--Arduino pipeline using rosserial, OpenCV, and Python nodes to modulate USB camera framerates from potentiometer readings.}
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
+        \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -137,30 +146,13 @@
       {\textbf{Behaviour Cloning for Robotic Control} $|$ \emph{PyTorch, MuJoCo, NumPy, dm\_control}}{}
       \resumeItemListStart
         \resumeItem{Built an end-to-end pipeline with PyGame to collect, filter, and structure human-guided interaction data for training in dm\_control.}
+        \resumeItem{Designed a 2-layer DNN in PyTorch mapping robotic state observations to joint torque predictions for a simulated Reacher task.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Autonomous Racing and Traffic Sign Recognition (F1Tenth)} $|$ \emph{Python, YOLOv8, ROS, OpenCV}}{}
       \resumeItemListStart
         \resumeItem{Curated a 1,500+ image dataset, adding 600+ custom-labeled track images to handle motion blur and lighting.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Multimodal AI Messenger} $|$ \emph{Node.js, Express, WebSocket, MongoDB, Gemini API}}{}
-      \resumeItemListStart
-        \resumeItem{Built a concurrent full-stack messaging platform with Node.js, MongoDB, and WebSockets for real-time updates.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{BlindVision} $|$ \emph{Flask, YOLOv8, OpenCV, Gemini API, JavaScript}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented the Gemini API and YOLOv8 for multimodal AI, with OpenCV, NumPy, PIL, and Base64 for camera image processing.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Adversarial Robustness Evaluation} $|$ \emph{PyTorch, CNN, Computer Vision}}{}
-      \resumeItemListStart
-        \resumeItem{Built a modular attack framework with configurable hyperparameters to analyze perturbation level versus Attack Success Rate (ASR).}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

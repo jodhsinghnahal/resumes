@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -103,11 +103,9 @@
       {Xantrex}{Burnaby, BC}
       \resumeItemListStart
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
         \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
-        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
-        \resumeItem{Performed code reviews and system-level regression testing, reporting issues on Jira and Confluence.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -117,6 +115,9 @@
         \resumeItem{Developed Zephyr RTOS firmware on a Teensy 4.1 for stepper-based control of a 6-axis robotic arm.}
         \resumeItem{Led migration to a CAN-FD architecture using Moteus r4.11 controllers and BLDC motors for closed-loop torque control and higher bandwidth.}
         \resumeItem{Interfaced an Intel NUC (onboard PC) with SocketCAN and bridged data to ROS.}
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -125,6 +126,8 @@
       \resumeItemListStart
         \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
         \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
+        \resumeItem{Expanded the constrained-random testbench to cover corner cases and improve functional coverage.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -132,6 +135,8 @@
       {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
+        \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
+        \resumeItem{Designing embedded power-management PCB hardware in KiCad integrating AC--DC rectifiers, transformers, and switching circuitry.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -144,23 +149,12 @@
       \resumeItemListStart
         \resumeItem{Engineered thread synchronization primitives, including blocking locks and condition variables, to resolve race conditions in kernel space.}
         \resumeItem{Implemented system calls including fork, execv, and file I/O.}
-        \resumeItem{Implemented virtual memory with TLB fault handling, demand paging, and process isolation.}
-        \resumeItem{Debugged concurrency and memory-management issues with GDB in a large C codebase.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Memory Allocator Implementation} $|$ \emph{C, Pointers, Systems Programming}}{}
       \resumeItemListStart
         \resumeItem{Developed a custom malloc, free, and realloc using an implicit free list with 8-byte alignment and block headers.}
-        \resumeItem{Managed block metadata, fragmentation, and coalescing with pointer arithmetic for efficient heap utilization.}
-        \resumeItem{Implemented heap consistency checkers to detect corrupted headers, double-frees, and buffer overflows.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{ARM64 Security Exploitation} $|$ \emph{ARM64 Assembly, GDB, ROP, Reverse Engineering}}{}
-      \resumeItemListStart
-        \resumeItem{Hijacked return addresses in ARM64 binaries via buffer overflows and stack mapping to achieve arbitrary code execution.}
-        \resumeItem{Engineered Return-Oriented Programming chains to bypass non-executable stack protections.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

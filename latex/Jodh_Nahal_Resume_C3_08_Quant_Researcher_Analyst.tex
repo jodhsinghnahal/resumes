@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -112,14 +112,11 @@
       {Software Test / Embedded Development Co-op}{May 2024 -- Aug 2025}
       {Xantrex}{Burnaby, BC}
       \resumeItemListStart
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
         \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
-        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
-        \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
-        \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
-        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+        \resumeItem{Profiled the C++ firmware to eliminate performance bottlenecks.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -127,6 +124,19 @@
       {AMD}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Writing SystemVerilog Assertions (SVA) to cross-check legal responses across IPs.}
+        \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
+        \resumeItem{Expanded the constrained-random testbench to cover corner cases and improve functional coverage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
+        \resumeItem{Debugged C2000 firmware over JTAG in CCSTUDIO.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -139,21 +149,12 @@
       \resumeItemListStart
         \resumeItem{Built a modular attack framework with configurable hyperparameters to analyze perturbation level versus Attack Success Rate (ASR).}
         \resumeItem{Implemented FGSM and PGD adversarial attack pipelines in PyTorch to evaluate VGG-16 robustness.}
-        \resumeItem{Trained a VGG-16 CNN on CIFAR-10 to establish baseline and per-class accuracy.}
-        \resumeItem{Authored tools to visualize adversarial noise and its impact on decision boundaries.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Behaviour Cloning for Robotic Control} $|$ \emph{PyTorch, MuJoCo, NumPy, dm\_control}}{}
       \resumeItemListStart
         \resumeItem{Improved reaching precision with a custom distance-weighted loss function.}
-        \resumeItem{Designed a 2-layer DNN in PyTorch mapping robotic state observations to joint torque predictions for a simulated Reacher task.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Image Compression Quadtree (Toqutree)} $|$ \emph{C++, STL, Image Processing}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented 2D prefix sum arrays for O(1) average color and hue histogram lookups over arbitrary regions.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

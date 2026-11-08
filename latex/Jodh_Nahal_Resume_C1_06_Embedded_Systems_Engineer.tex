@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -103,13 +103,11 @@
       {Xantrex}{Burnaby, BC}
       \resumeItemListStart
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
         \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
         \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
         \resumeItem{Troubleshot CAN/BLE communication faults on embedded inverter and charger platforms using oscilloscopes, logic analyzers, PCAN-USB adapters, and BLE sniffers.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
-        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
-        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -120,6 +118,7 @@
         \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
         \resumeItem{Developed Zephyr RTOS firmware on a Teensy 4.1 for stepper-based control of a 6-axis robotic arm.}
         \resumeItem{Led migration to a CAN-FD architecture using Moteus r4.11 controllers and BLDC motors for closed-loop torque control and higher bandwidth.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -128,6 +127,7 @@
       \resumeItemListStart
         \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
         \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -135,6 +135,7 @@
       {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Designing embedded power-management PCB hardware in KiCad integrating AC--DC rectifiers, transformers, and switching circuitry.}
+        \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -153,7 +154,6 @@
       {\textbf{Memory Allocator Implementation} $|$ \emph{C, Pointers, Systems Programming}}{}
       \resumeItemListStart
         \resumeItem{Developed a custom malloc, free, and realloc using an implicit free list with 8-byte alignment and block headers.}
-        \resumeItem{Implemented heap consistency checkers to detect corrupted headers, double-frees, and buffer overflows.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

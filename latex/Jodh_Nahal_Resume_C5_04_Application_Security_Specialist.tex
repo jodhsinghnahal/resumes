@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -107,10 +107,8 @@
         \resumeItem{Built Python Hardware-in-the-Loop (HIL) CAN and UART simulators to run 100+ verification tests on the Raspberry Pi gateway, validating edge cases and stress-testing real-time performance.}
         \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
         \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
-        \resumeItem{Extended firmware support to NMEA 2000 and a proprietary UART battery communication protocol.}
-        \resumeItem{Wrote Python scripts to autogenerate scalable C++ object-oriented code from SQLite and Microsoft Access/Excel data, eliminating manual boilerplate.}
-        \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
+        \resumeItem{Profiled the C++ firmware to eliminate performance bottlenecks.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -120,6 +118,25 @@
         \resumeItem{Writing SystemVerilog Assertions (SVA) to cross-check legal responses across IPs.}
         \resumeItem{Debugging RTL behavior through simulation and waveform analysis.}
         \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
+        \resumeItem{Expanded the constrained-random testbench to cover corner cases and improve functional coverage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware / Embedded Systems Developer}{Sept 2023 -- July 2026}
+      {UBC Rover}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Led a team of 3 engineers building a distributed embedded control system across ESP32 (FreeRTOS), STM32, Arduino, and TI LaunchPad MCUs over SPI/I2C.}
+        \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
+        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{May 2026 -- Sept 2026}
+      {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
+        \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -138,32 +155,6 @@
       {\textbf{ARM64 Security Exploitation} $|$ \emph{ARM64 Assembly, GDB, ROP, Reverse Engineering}}{}
       \resumeItemListStart
         \resumeItem{Hijacked return addresses in ARM64 binaries via buffer overflows and stack mapping to achieve arbitrary code execution.}
-        \resumeItem{Used objdump, readelf, and GDB to reverse-engineer calling conventions and find vulnerabilities.}
-        \resumeItem{Engineered Return-Oriented Programming chains to bypass non-executable stack protections.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Multimodal AI Messenger} $|$ \emph{Node.js, Express, WebSocket, MongoDB, Gemini API}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented SHA256 salt-based user authentication.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{OS161 Kernel Development} $|$ \emph{C, GDB, MIPS, Operating Systems}}{}
-      \resumeItemListStart
-        \resumeItem{Debugged concurrency and memory-management issues with GDB in a large C codebase.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{BlindVision} $|$ \emph{Flask, YOLOv8, OpenCV, Gemini API, JavaScript}}{}
-      \resumeItemListStart
-        \resumeItem{Built a Python Flask/SQLite backend with RESTful endpoints and CRUD operations, and a JavaScript/HTML/CSS frontend deployed on PythonAnywhere.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Adversarial Robustness Evaluation} $|$ \emph{PyTorch, CNN, Computer Vision}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented FGSM and PGD adversarial attack pipelines in PyTorch to evaluate VGG-16 robustness.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd

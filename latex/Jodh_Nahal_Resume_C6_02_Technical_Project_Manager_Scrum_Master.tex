@@ -82,7 +82,7 @@
       {University of British Columbia}{Expected May 2028}
       {Bachelor of Applied Science in Computer Engineering}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4 or 8 months, CGPA: 84.7\%.}
+        \resumeItem{Presidential Scholars Award (\$60,000), Dean's Honour List, available 4, 8 or 12 months, CGPA: 84.7\%.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -106,11 +106,6 @@
         \resumeItem{Automated firmware validation with GitHub Actions CI and Catch2 unit tests to improve regression coverage and reliability.}
         \resumeItem{Led migration to a CAN-FD architecture using Moteus r4.11 controllers and BLDC motors for closed-loop torque control and higher bandwidth.}
         \resumeItem{Aggregated inputs from switches, buttons, potentiometers, encoders, and joysticks and streamed the data over UART.}
-        \resumeItem{Developed a 16-channel telemetry system on a TI C2000 (LAUNCHXL-F28069M) using ePWM-triggered ADC interrupts, streaming GPIO/ADC data over SCI/UART.}
-        \resumeItem{Debugged C2000 firmware over JTAG in CCSTUDIO.}
-        \resumeItem{Developed Zephyr RTOS firmware on a Teensy 4.1 for stepper-based control of a 6-axis robotic arm.}
-        \resumeItem{Interfaced an Intel NUC (onboard PC) with SocketCAN and bridged data to ROS.}
-        \resumeItem{Built a ROS--Arduino pipeline using rosserial, OpenCV, and Python nodes to modulate USB camera framerates from potentiometer readings.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -120,7 +115,9 @@
         \resumeItem{Performed code reviews and system-level regression testing, reporting issues on Jira and Confluence.}
         \resumeItem{Created documentation using PlantUML and Sphinx, and presented the field release to the team and Product Managers.}
         \resumeItem{Reduced build times by $5\times$ by implementing CI/CD cross-compilation pipelines with Docker, Jenkins, and CMake.}
-        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration, using code profiling to eliminate bottlenecks.}
+        \resumeItem{Achieved $7\times$ device capacity, 90\% lower CPU usage, and $\sim$2\,s lower latency after the C++ migration.}
+        \resumeItem{Developed an object-oriented, multi-threaded, non-blocking C++ firmware architecture on Linux-based Raspberry Pi gateways to parse RV-C CAN frames from STM32 devices and publish structured messages over MQTT.}
+        \resumeItem{Replaced a $\sim$60k-line Python implementation with the C++ architecture.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -129,6 +126,8 @@
       \resumeItemListStart
         \resumeItem{Building automation scripts and regression workflows to improve validation efficiency and coverage closure.}
         \resumeItem{Contributing to verification of the IOHUB subsystem for next-generation AMD processor architectures.}
+        \resumeItem{Verifying IOMMU L1 cache behavior using UVM in a constrained-random testbench.}
+        \resumeItem{Expanded the constrained-random testbench to cover corner cases and improve functional coverage.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -136,6 +135,7 @@
       {UBC Electrical and Computer Engineering --- Supervisor: Dr. Lutz Lampe}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Researching battery-less platforms for the Internet of Underwater Things via simulation of piezoelectric interface circuits.}
+        \resumeItem{Optimizing power extraction of piezoelectric energy harvesting interface circuits (SEH, SSHI, SECE) through LTspice and Simulink/Simscape simulation.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -147,6 +147,7 @@
       {\textbf{Autonomous Racing and Traffic Sign Recognition (F1Tenth)} $|$ \emph{Python, YOLOv8, ROS, OpenCV}}{}
       \resumeItemListStart
         \resumeItem{Architected a multi-node ROS2 stack with LiDAR and/or camera gap/wall-following and real-time command arbitration for collision-free racing on a Jetson Nano car.}
+        \resumeItem{Minimized control latency and startup delays by streamlining node execution.}
       \resumeItemListEnd
 
     \resumeProjectHeading
